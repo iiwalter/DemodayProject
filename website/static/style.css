@@ -1,0 +1,218 @@
+body
+{
+    background-image: url("../static/images/guardachuvas.jpg");
+    margin: 0%;
+}
+
+.topnav 
+{
+    background: rgb(0, 110, 201);
+    opacity: 0.9;
+    overflow: hidden;
+}
+  
+.topnav a 
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover 
+{
+    background-color: black;
+    opacity: 0.5;
+}
+  
+.topnav a.active 
+{
+    background-color: rgb(246, 252, 246);
+}
+  
+.topnav .icon 
+{
+    display: none;
+}
+
+section
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0.5%;
+}
+.purplecard
+{
+    background-color: rgb(0, 110, 201);
+    height: 100%;
+    margin: 50px;
+    padding: 0.5%;
+    width: 45%;
+    -webkit-box-shadow: 5px 5px 8px black;
+    -moz-box-shadow: 8px 8px 10px black;
+    box-shadow: 8px 8px 8px black; 
+    opacity: 0.9;
+    border-radius: 30px;
+
+}
+#formulario
+{
+    margin: 100px;
+}
+.card-home{
+    display: flex; 
+    justify-content: center; 
+    width: 18rem;
+    margin: 5px;
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 110, 201);
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 8px black;
+    -moz-box-shadow: 8px 8px 10px black;
+    box-shadow: 8px 8px 8px black; 
+    padding: 5%;
+    margin-left: 2%;
+    opacity: 0.9;
+}
+
+
+
+#map{
+    margin: 60px;
+    border-radius: 10px;
+    height: 400px;
+    width: 70%;
+}
+
+h3
+{
+    padding: 3% 5% 0 5%;
+    color: #fffefe;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.form-pesquisa{
+    padding: 5%;
+}
+h5{
+    color: black;
+    text-align: center;
+    padding-right: 2%;
+}
+#alagous{
+    margin-bottom: 10%;
+    color: white;
+}
+.card {
+    -webkit-box-shadow: 3px 3px 5px white;
+    -moz-box-shadow: 5px 5px 5px white;
+    box-shadow: white;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 10%;
+}
+iframe
+{
+    padding: 3% 30% 0 34%;
+}
+
+label{
+    display: none;
+}
+.controls{
+    margin: 0%;
+    padding: 0%;
+}
+p
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 3% 5% 0 5%;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.form-group{
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.control-label{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+}
+.controls{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+.help-block{
+    display: none;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgb(0, 110, 201);;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1% 10% 1% 11%;
+}
+
+.notUser
+{
+    padding: 20px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    background-color: black;
+    opacity: 0.5;
+    position:absolute;
+    bottom: 0;
+    left: 0; 
+    width:100%;
+    background-color:rgb(0, 110, 201);
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}

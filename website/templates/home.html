@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<section>
+    <div class="purplecard">
+        <h3>BEM VINDO AO ALAGAMAPS</h3>
+
+        <p>Somos um site que informa de acordo com usuários, os pontos de alagamento na cidade!
+            Calculamos com base na quantidade de registros dos locais alagados e informamos pra você!
+        </p>
+    </div>
+
+    <div class="purplecard" id="formulario" style="display: flex; flex-direction: column; justify-content: center;">
+        <h3>Pesquise por sua rua ou avenida:</h3>
+        <p style="text-align: center;"> Se sua rua estiver alagada, ela será listada aqui.</p>
+        <form method="POST" class="form-pesquisa">
+            {% csrf_token %}
+            {{formulario|crispy}}
+            <button>Buscar</button>
+        </form>
+        <div>
+
+            <ul style="list-style-type: none; padding: 0%; display: flex; flex-direction: column; align-items: center;">
+                {% for lugar in matches %}
+                <div class="card card-home">
+                    <li>
+                        <h5 class="card-title">{{lugar.rua}}</h5>
+                    </li>
+                </div>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
